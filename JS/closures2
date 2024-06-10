@@ -1,0 +1,32 @@
+// function x(){
+//     var a=23
+    
+//     function y(){//return fuction y(){}
+//         console.log(a);
+//     }
+//     //  y();
+//     a=100;
+//     return y;// it return closure : function & laxical scope return  
+//     // It return 'a' : but it do not  return value  of 'a' it returns refrence /label/identifier to 'a' 
+// }
+// var z=x();
+// console.log(z);
+// z();
+
+function z(){
+    var b=900;
+
+function x(){
+    var a=23
+    
+    function y(){//return fuction y(){}
+         console.log(a,b);
+        return a;
+    }
+    var v=y();
+console.log(v);
+      y();
+}
+x();
+}
+z();
